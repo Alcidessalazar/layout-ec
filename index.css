@@ -14,7 +14,7 @@ body {
   padding: 20px;
   align-items: center;
 }
-.logo--al{
+.logo--al {
   border-radius: 50%;
   margin-right: 10px;
   width: 55px;
@@ -24,8 +24,9 @@ body {
   padding: 20px;
   display: flex;
   background-image: url(./programer.jpg);
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
+  background-position: center center;
   flex-wrap: wrap;
 }
 
@@ -81,27 +82,34 @@ body {
     width: 100%;
     display: flex;
   }
-  .main{
+  .main {
     background-image: url(./programer.jpg);
-    background-size:cover;
+    background-size: contain;
     background-attachment: fixed;
+    background-position: center center;
   }
 }
-@media (max-width:480px){
-  .main__titles{
+@media (max-width: 480px) {
+  .main {
+    background-image: url(./programer.jpg);
+    background-size:contain;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .main__titles {
     width: 100%;
   }
-  .main__content{
+  .main__content {
     width: 100%;
     padding: 25px 0;
   }
-  .main__questions{
+  .main__questions {
     display: inline-block;
   }
-  .main__title{
+  .main__title {
     margin-bottom: 16px;
   }
-  .footer{
+  .footer {
     height: auto;
   }
 }
